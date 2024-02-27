@@ -1,0 +1,21 @@
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+}
+
+.gomb
+{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-new
+{
+    height: 25px;
+    width: 100px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
