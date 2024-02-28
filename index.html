@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Etch-A-Sketch</title>
 </head>
-<body>
-    <div class="gomb">
-        <button class="btn-new">New</button>
-    </div>
-    
-    <div class="container">
 
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="gombok">
+                <input onchange="slide()" type="range" min="1" max="64" value="8" class="slider">
+                <p id="sliderVal">8</p>
+                <button onclick="changeGrid()" style="margin-top: 10px;">Change Grid</button>
+                <input class="color" type="color" style="margin-top: 10px;"></input>
+                <label for="color">Pick Color</label>
+                <button onclick="drawing()" onc style="margin-top: 10px;">Draw</button>
+                <button onclick="erase()" style="margin-top: 10px;">Eraser</button>
+                <button onclick="changeGrid()" style="margin-top: 10px;">Clear</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="board">
+                <div class="draw">
+    
+                </div>
+            </div>
+        </div>
+      
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>
